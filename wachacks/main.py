@@ -21,12 +21,14 @@ class Subscribe(webapp2.RequestHandler):
     if valid_email(email) and not Subscription.query(Subscription.email == email).get():
       subscription = Subscription()
       subscription.email = email
+      subscription.ip    = self.request.remote_addr
       subscription.put()
       self.response.out.write("done")
 
 class Subscription(ndb.Model):
   date_inserted = ndb.DateTimeProperty(auto_now_add = True)
   email         = ndb.StringProperty(required = True)
+  ip            = ndb.StringProperty(required = True)
 
 app = webapp2.WSGIApplication([
   ('/', Index),
