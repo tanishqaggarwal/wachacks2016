@@ -1,193 +1,166 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-	<!--Import Google Icon Font-->
-	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<!--Import materialize.css-->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-	<style type = "text/css">
-		html { 
-			background: url(/static/images/bg.jpg) no-repeat center center fixed; 
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
-		}
-		body {
-			background-color: rgba(48,63,159,0.5);
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
-		}
-		input::-webkit-input-placeholder {  color: #fff;}
-	</style>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://cdn.muicss.com/mui-latest/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans|Quicksand|Comfortaa" rel="stylesheet" type="text/css" />
+    <link href="static/style.css" rel="stylesheet" type="text/css" />
+    <script src="http://cdn.muicss.com/mui-latest/js/mui.min.js"></script>
+  </head>
+  <body>
+    <header class="mui-appbar mui--z1">
+      <div class="mui-container">
+        <table width="100%">
+          <tr class="mui--appbar-height">
+            <td class="mui--text-title"><a href="index.html"><img class="brand responsive-img" src="static/img/wachacks.png"></a></td>
+            <td align="right">
+              <ul class="mui-list--inline mui--text-body2">
+              	<li><a href="#"><div class="hover">Home</div></a></li>
+                <li><a href="#scroll1"><div class="hover">About</div></a></li>
+                <li><a href="#scroll2"><div class="hover">Logistics</div></a></li>
+                <li><a href="#scroll3"><div class="hover">Sponsors</div></a></li>
+                <li><a href="static/register.html"><div class="hover">Register</div></a></li>
+                <li><a href="#scroll5"><div class="hover">Contact</div></a></li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </header>
+    <div id="content-wrapper" class="mui--text-center" id="home">
+      <div class="mui--appbar-height"></div>
+      <div class="mui-container mui--text-center" id="intro">
+      	<div class="mui--text-display3">WACHacks</div>
+      	<br><br><br>
+      	<div class="head-text">November 12 - 13, 2016</div><br>
+      	<div class="head-text">Windsor Athletic Club, West Windsor NJ</div><br>
+      	<div class="head-text">A 12 hour hackathon in the heart of New Jersey</div>
+      </div>
+    </div>
+    <div class="mui--text-center mui-container" id="scroll1">
+    <div class="mui--appbar-height"></div>
+    	<div class="mui-container mui--text-center" style="height: 150%; width: 100%;">
+    		<br><br><br>
+      	<div class="head-text big" id="about">Hackathon?</div>
+      	<br>
+      	<p class="body">A programming competition where groups of four come together and code something amazing.</p>
+      	<br><br><br>
+	      <div class="mui-row">
+	      	<div class="mui-col-md-4">
+	      	<p class="body">How much does it cost?</p>
+	      	<br>
+	      	<p class="small">A grand total of $0.00! Just bring your creative spirit and we'll provide the food, hardware, and space! Please note that as of now, we'll be unable to provide any travel reimbursements for this year's WAC Hacks.</p>
+	      	</div>
+	      	<div class="mui-col-md-4">
+	      	<p class="body">What if I can't code?</p>
+	      	<br>
+	      	<p class="small">WACHacks is the perfect place for you to learn! Hackathons are the among the best places to learn a new programming language. WACHacks is open to all levels of programmers, and there's no better way to learn than by doing a project!</p>
+	      	</div>
+	      	<div class="mui-col-md-4">
+	      	<p class="body">What should I bring?</p>
+	      	<br>
+	      	<p class="small">You should bring your laptop, phone, chargers, any hardware/electronics you might be using, power strips, and your school ID.</p>
+	      	</div>
+	      </div>
+	      <br><br>
+	      <div class="mui-row">
+	      	<div class="mui-col-md-4">
+	      		<p class="body">How large can teams be?</p>
+	      		<br>
+	      		<p class="small">Teams can consist of, at the most, 4 people. You can either team up with your friends prior to the event, or join one during WACHacks!</p>
+	      	</div>
+	      	<div class="mui-col-md-4">
+	      		<p class="body">Can I start my project before the event?</p>
+	      		<br>
+	      		<p class="small">To make sure the competition is fair and everybody gets the same amount of time, please don't start your project until the intro presentations have concluded.</p>
+	      	</div>
+	      	<div class="mui-col-md-4">
+	      		<p class="body">What hardware can I use?</p>
+	      		<br>
+	      		<p class="small">WACHacks will be releasing a list of available hardware soon! Stay tuned!</p>
+	      	</div>
+	      </div>
+      </div>
+    </div>
+    <div class="mui-container mui--text-center" id="scroll2">
+    	    <div class="mui--appbar-height"></div>
+    	        	<div class="mui-container mui--text-center">
+    	        	<div class="head-text big" id="about" style="margin-top: 10%;">Location</div>
+    	        	<br>
+    	        	<div class="body">November 15 &amp; 16 2016 8:00 AM to 10:00 PM</div>
+    	        	<div class="body">Windsor Athletic Club, 99 Clarksville Rd, West Windsor Township, NJ</div>
+    	        	<br><br>
+    	        	<div class="head-text big" id="about">Schedule</div>
+    	        	<br>
+    	        	<div class="body">Schedule coming soon!</div>
+    </div>
 
-	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-	<script type="text/javascript" src="/static/js/typed.js"></script>
-<!-- 	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDlqWOCRUuOM_Ue95IT7S8hps4RZUiCEaI"></script> -->
+    <div class="mui-container mui--text-center" id="scroll3">
+    	    <div class="mui--appbar-height"></div>
+    	        	<div class="mui-container mui--text-center">
+    	        	<br><br><br>
+    	        	<div class="head-text big" id="about">Sponsors</div>
+    	        	<br>
+    	        	<br><br>
+    	        	<div class="row">
+    	        		<div class="mui-col-md-6" id="sponsor">
+    	        			<a href="http://fundbucket.org/about"><img src="static/img/sponsors/fundbucket.png"></a>
+    	        		</div>
+    	        		<div class="mui-col-md-6">
+    	        			<a href="http://hopelinefashions.org"><img src="static/img/sponsors/hopeline.png"></a>
+    	        		</div>
+    	        		<div class="mui-col-md-4">
+    	        			<!--<img src="static/img/sponsors/placeholder.png">-->
+    	        		</div>
+    	        		<br><br><br><br><br><br>
+    	        		<div class="body">And more to come!</div>
+    	        	</div>
+    </div>
 
-	<title>WAC | Hacks</title>
 
-	<!--Let browser know website is optimized for mobile-->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-</head>
+<div class="mui-container mui--text-center" id="scroll5">
+    	    <div class="mui--appbar-height"></div>
+    	        	<div class="mui-container mui--text-center">
+    	        	<div class="head-text big" id="about" style="margin-top: 10%;">Contact</div>
+    	        	<br>
+    	        	<div class="body">Feel free to shoot us an email at <a href="mailto:hello@wachacks.com" style="color: white;text-decoration: underline;">hello@wachacks.com</a>!</div>
+    	        	<br>
+    	        	<div class="body">If you would like to sponsor us, you can read our prospectus <a href="static/pdf/Sponsorship.pdf" style="color: white; text-decoration: underline;">here</a> and send us an interest email!</div>
 
-<body>
-	<div class = "row valign-wrapper" style = "height: 100vh;">
-		<div class = "col s12">
-			<div class = "row valign center-align">
-				<h1 class = "white-text" style="white-space:pre"> <span class = "title"><b>WAC</b> | Hacks</span></h1>
-				<p class = "white-text"><b>November 12th, 2016</b></p>
-				<p class = "white-text"><b>400</b> high school hackers, <b>12</b> hours</p>
-				<p class = "white-text"><b>Windsor Athletic Club</b></p>
-				<p class = "white-text">West Windsor, New Jersey</p>
-				<br />
-				<div class = "row valign center-align">
-					<div class = "col valign center-align m2 offset-m5 right-align">
-						<input id = "email" type = "text" placeholder = "enteryouremailtohack@w.ac" class = "validate center-align white-text"/>
-						<button id = "emailsubmit" class = "btn blue waves-light waves-effect center-align"><span class = "white-text">I'm Interested!</span></button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    	        	<br><br><br><br>
+    	        	<div class="fancy">Come hack with us!</div>
+    </div>
 
-	<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-		<a class="btn-floating btn-large blue tooltipped" data-position="left" data-delay="50" data-tooltip="More Info">
-			<i class="large material-icons">help_outline</i>
-		</a>
-		<ul>
-			<li><a class="btn-floating blue modal-trigger tooltipped" data-position="left" data-delay="50" data-tooltip="Contact WACHacks" href = "#contact_modal"><i class="material-icons">message</i></a></li>
-			<li><a class="btn-floating blue darken-1 modal-trigger tooltipped" data-position="left" data-delay="50" data-tooltip="Sponsors" href = "#sponsors_modal"><i class="material-icons">attach_money</i></a></li>
-			<li><a class="btn-floating blue modal-trigger tooltipped" data-position="left" data-delay="50" data-tooltip="Directions" href = "#directions_modal"><i class="material-icons">directions</i></a></li>
-			<li><a class="btn-floating blue modal-trigger tooltipped" data-position="left" data-delay="50" data-tooltip="FAQ" href = "#faq_modal"><i class="material-icons">help</i></a></li>
-		</ul>
-	</div>
 
-	<div id="contact_modal" class="modal">
-		<div class="modal-content">
-			<h4>Contact the WACHacks Team</h4>
-			<p>If you need to reach out to us, do so via <a href = "mailto:hello@wachacks.com">email</a> (faster) or our <a href="http://facebook.com">Facebook page</a> (slower).</p>
-		</div>
-	</div>
 
-	<div id="sponsors_modal" class="modal">
-		<div class="modal-content">
-			<h4>Sponsors</h4>
-			<div class = "row">
-			<div class = "col s12 m6">
-			<img src = "/static/images/sponsors/mlh.png" alt = "MLH" width = "300px" />
-			</div>
-			</div>
-		</div>
-	</div>
 
-	<div id="directions_modal" class="modal">
-		<div class="modal-content">
-			<h4>Where is WACHacks?</h4>
-			<p>Windsor Athletic Club is located at <b>99 Clarksville Rd, West Windsor Township, NJ 08550</b>.<!-- , which you can see on the map below.</p>
-			<div id="googleMap" style="width:500px;height:400px"></div> -->
-		</div>
-	</div>
 
-	<div id="faq_modal" class="modal">
-		<div class="modal-content">
-			<h4>FAQ</h4>
-			<div class = "row">
-				<div class = "col s12 m4">
-					<p><b>What is a hackathon?</b></p>
-					<p>A hackathon is an invention competition that usually spans 12 or more hours where high school students can collaborate in teams to build amazing things in hardware, software, or both!</p>
-				</div>
-				<div class = "col s12 m4">
-					<p><b>How much does it cost?</b></p>
-					<p>A grand total of $0.00! Just bring your creative spirit and we'll provide the food, hardware, and space! Please note that as of now, we'll be unable to provide any travel reimbursements for this year's WAC Hacks.</p>
-				</div>
-				<div class = "col s12 m4">
-					<p><b>What if I can't code?</b></p>
-					<p>WACHacks is the perfect place for you to learn! Hackathons are the among the best places to learn a new programming language. WACHacks is open to all levels of programmers, and there's no better way to learn than by doing a project!</p>
-				</div>
-			</div>
+    <footer>
+  <div class="mui-container mui--text-center">
+    <div class="row">
+    	<div class="mui-col-md-2">
+    		<a href="#scroll1" class="body">About</a>
+    	</div>
+    	<div class="mui-col-md-2">
+    		<a href="#scroll2" class="body">Logistics</a>
+    	</div>
+    	<div class="mui-col-md-2">
+    		<a href="#scroll3" class="body">Sponsors</a>
+    	</div>
+    	<div class="mui-col-md-2">
+    		<a href="static/team.html" class="body">Team</a>
+    	</div>
+    	<div class="mui-col-md-2">
+    		<a href="static/register.html" class="body">Register</a>
+    	</div>
+    	<div class="mui-col-md-2">
+    		<a href="#scroll5" class="body">Contact</a>
+    	</div>
+    </div>
+  </div>
+</footer>
 
-			<div class = "row">
-				<div class = "col s12 m4">
-					<p><b>What should I bring?</b></p>
-					<p>You should bring your laptop, phone, chargers, any hardware/electronics you might be using, power strips, and your school ID.</p>	
-				</div>
-				<div class = "col s12 m4">
-					<p><b>How large can teams be?</b></p>
-					<p>Teams can consist of, at the most, 4 people. You can either team up with your friends prior to the event, or join one during WACHacks!</p>
-				</div>
-				<div class = "col s12 m4">
-					<p><b>Can I start my project before the event?</b></p>
-					<p>To make sure the competition is fair and everybody gets the same amount of time, please don't start your project until the intro presentations have concluded.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<script>
-
-		// function initialize() {
-		//     var latlng = new google.maps.LatLng(40.297462, -74.656948);
-		//     var myOptions = {
-		//         zoom: 10,
-		//         center: latlng,
-		//         mapTypeId: google.maps.MapTypeId.ROADMAP
-		//     };
-		//     var map = new google.maps.Map(document.getElementById("googleMap"),
-		//             myOptions);
-		// }
-
-		$(document).ready(function () {
-			//initialize();
-			$('.modal-trigger').leanModal({
-				dismissible: true,
-				// ready: function () {
-				// 	google.maps.event.trigger($("#googleMap"), 'resize');
-				// }
-			});
-		});
-
-		if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent))) {
-		    $(function() {
-				$(".title").typed({
-				strings: ["<large> <b>WAC</b></large> | Hacks^3000", " Totally <i>whack</i> hacks!^2000"],
-				contentType: 'html',
-				loop: true,
-				typeSpeed: 2,
-				showCursor: false
-			});
-			});
-		}
-
-		$("#emailsubmit").click(function() {
-			function validateEmail(email) {
-			  var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-			  return re.test(email);
-			}
-
-			if (!(validateEmail($("#email").val()))) {
-				$("#email").removeClass("valid");
-				$("#email").addClass("invalid");
-			}
-			else {
-				$("#email").removeClass("invalid");
-				$("#email").addClass("valid");
-				$.ajax({
-					method: "POST",
-					url: "/subscribe",
-					data: {
-						email: $("#email").val(),
-					},
-					success: function() {
-						$("#email").val(""),
-						Materialize.toast("Added you to our mailing list! Stay tuned for when registration opens.", 5000);
-					}
-				});
-			}
-		});
-	</script>
-</body>
+  </body>
 </html>
