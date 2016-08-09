@@ -4,17 +4,17 @@
 	<!--Import Google Icon Font-->
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!--Import materialize.css-->
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans|Quicksand|Comfortaa" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
 	<style type = "text/css">
-		html { 
-			background: url(/static/images/bg.jpg) no-repeat center center fixed; 
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
+		body { 
+			font-family: Comfortaa;
 		}
-		body {
-			background-color: rgba(48,63,159,0.5);
+		.frontimage {
+			background: linear-gradient(
+      rgba(33, 150, 243, 0.75), 
+      rgba(33, 150, 243, 0.75)
+    ), url(/static/images/bg.jpg) no-repeat center fixed;
 			-webkit-background-size: cover;
 			-moz-background-size: cover;
 			-o-background-size: cover;
@@ -26,7 +26,7 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
 	<script type="text/javascript" src="/static/js/typed.js"></script>
-<!-- 	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDlqWOCRUuOM_Ue95IT7S8hps4RZUiCEaI"></script> -->
+	<!-- 	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDlqWOCRUuOM_Ue95IT7S8hps4RZUiCEaI"></script> -->
 
 	<title>WAC | Hacks</title>
 
@@ -35,7 +35,7 @@
 </head>
 
 <body>
-	<div class = "row valign-wrapper" style = "height: 100vh;">
+	<div class = "row valign-wrapper frontimage" style = "height: 100vh;">
 		<div class = "col s12">
 			<div class = "row valign center-align">
 				<h1 class = "white-text" style="white-space:pre"> <span class = "title"><b>WAC</b> | Hacks</span></h1>
@@ -47,86 +47,116 @@
 				<div class = "row valign center-align">
 					<div class = "col valign center-align m2 offset-m5 right-align">
 						<input id = "email" type = "text" placeholder = "enteryouremailtohack@w.ac" class = "validate center-align white-text"/>
-						<button id = "emailsubmit" class = "btn blue waves-light waves-effect center-align"><span class = "white-text">I'm Interested!</span></button>
+						<button id = "emailsubmit" class = "btn orange waves-light waves-effect center-align"><span class = "white-text">I'm Interested!</span></button>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
-	<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-		<a class="btn-floating btn-large blue tooltipped" data-position="left" data-delay="50" data-tooltip="More Info">
-			<i class="large material-icons">help_outline</i>
-		</a>
-		<ul>
-			<li><a class="btn-floating blue modal-trigger tooltipped" data-position="left" data-delay="50" data-tooltip="Contact WACHacks" href = "#contact_modal"><i class="material-icons">message</i></a></li>
-			<li><a class="btn-floating blue darken-1 modal-trigger tooltipped" data-position="left" data-delay="50" data-tooltip="Sponsors" href = "#sponsors_modal"><i class="material-icons">attach_money</i></a></li>
-			<li><a class="btn-floating blue modal-trigger tooltipped" data-position="left" data-delay="50" data-tooltip="Directions" href = "#directions_modal"><i class="material-icons">directions</i></a></li>
-			<li><a class="btn-floating blue modal-trigger tooltipped" data-position="left" data-delay="50" data-tooltip="FAQ" href = "#faq_modal"><i class="material-icons">help</i></a></li>
-		</ul>
-	</div>
-
-	<div id="contact_modal" class="modal">
-		<div class="modal-content">
-			<h4>Contact the WACHacks Team</h4>
-			<p>If you need to reach out to us, do so via <a href = "mailto:hello@wachacks.com">email</a> (faster) or our <a href="http://facebook.com">Facebook page</a> (slower).</p>
-		</div>
-	</div>
-
-	<div id="sponsors_modal" class="modal">
-		<div class="modal-content">
-			<h4>Sponsors</h4>
+	<div class = "section white">
+		<div class = "container">
 			<div class = "row">
-			<div class = "col s12 m6">
-			<img src = "/static/images/sponsors/mlh.png" alt = "MLH" width = "300px" />
-			</div>
+				<div class = "valign-wrapper"><h1 class = "valign center-align">What is WACHacks?</h1></div>
+				<p>WACHacks is the first exclusively high school hackathon in the West Windsor, New Jersey area. We're going to be bringing together 400 high schoolers and dozens of mentors from major companies to see what they can build in 12 hours! </p>
+				<div class = "row">
+					<div class = "col s12 m4">
+						<p><b>What is a hackathon?</b></p>
+						<p>A hackathon is an invention competition that usually spans 12 or more hours where high school students can collaborate in teams to build amazing things in hardware, software, or both!</p>
+					</div>
+					<div class = "col s12 m4">
+						<p><b>How much does it cost?</b></p>
+						<p>A grand total of $0.00! Just bring your creative spirit and we'll provide the food, hardware, and space! Please note that as of now, we'll be unable to provide any travel reimbursements for this year's WAC Hacks.</p>
+					</div>
+					<div class = "col s12 m4">
+						<p><b>What if I can't code?</b></p>
+						<p>WACHacks is the perfect place for you to learn! Hackathons are the among the best places to learn a new programming language. WACHacks is open to all levels of programmers, and there's no better way to learn than by doing a project!</p>
+					</div>
+				</div>
+
+				<div class = "row">
+					<div class = "col s12 m4">
+						<p><b>What should I bring?</b></p>
+						<p>You should bring your laptop, phone, chargers, any hardware/electronics you might be using, power strips, and your school ID.</p>	
+					</div>
+					<div class = "col s12 m4">
+						<p><b>How large can teams be?</b></p>
+						<p>Teams can consist of, at the most, 4 people. You can either team up with your friends prior to the event, or join one during WACHacks!</p>
+					</div>
+					<div class = "col s12 m4">
+						<p><b>Can I start my project before the event?</b></p>
+						<p>To make sure the competition is fair and everybody gets the same amount of time, please don't start your project until the intro presentations have concluded.</p>
+					</div>
+				</div>
+				<div class = "row">
+					<div class = "col s12 m4">
+						<p><b>Where is WACHacks going to be?</b></p>
+						<p>Windsor Athletic Club is located at <b>99 Clarksville Rd, West Windsor Township, NJ 08550.</b></p>	
+					</div>
+					<div class = "col s12 m4">
+						<p><b>Who can I contact with more questions?</b></p>
+						<p>Hit us up at <a href = "mailto:hello@wachacks.com">hello@wachacks.com</a>!</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-
-	<div id="directions_modal" class="modal">
-		<div class="modal-content">
-			<h4>Where is WACHacks?</h4>
-			<p>Windsor Athletic Club is located at <b>99 Clarksville Rd, West Windsor Township, NJ 08550</b>.<!-- , which you can see on the map below.</p>
-			<div id="googleMap" style="width:500px;height:400px"></div> -->
-		</div>
-	</div>
-
-	<div id="faq_modal" class="modal">
-		<div class="modal-content">
-			<h4>FAQ</h4>
+	<div class = "section black lighten-2">
+		<div class = "container">
 			<div class = "row">
-				<div class = "col s12 m4">
-					<p><b>What is a hackathon?</b></p>
-					<p>A hackathon is an invention competition that usually spans 12 or more hours where high school students can collaborate in teams to build amazing things in hardware, software, or both!</p>
+				<h1 class = "orange-text center-align lighten-3">Sponsors</h1>
+				<div class="section row">
+					<div class="col s12 m6 center">
+						<a href="http://fundbucket.org/about"><img class = "responsive-img" src="static/img/sponsors/fundbucket.png"></a>
+					</div>
+					<div class="col s12 m6 center">
+						<a href="http://hopelinefashions.org"><img class = "responsive-img" src="static/img/sponsors/hopeline.png"></a>
+					</div>
 				</div>
-				<div class = "col s12 m4">
-					<p><b>How much does it cost?</b></p>
-					<p>A grand total of $0.00! Just bring your creative spirit and we'll provide the food, hardware, and space! Please note that as of now, we'll be unable to provide any travel reimbursements for this year's WAC Hacks.</p>
-				</div>
-				<div class = "col s12 m4">
-					<p><b>What if I can't code?</b></p>
-					<p>WACHacks is the perfect place for you to learn! Hackathons are the among the best places to learn a new programming language. WACHacks is open to all levels of programmers, and there's no better way to learn than by doing a project!</p>
-				</div>
-			</div>
-
-			<div class = "row">
-				<div class = "col s12 m4">
-					<p><b>What should I bring?</b></p>
-					<p>You should bring your laptop, phone, chargers, any hardware/electronics you might be using, power strips, and your school ID.</p>	
-				</div>
-				<div class = "col s12 m4">
-					<p><b>How large can teams be?</b></p>
-					<p>Teams can consist of, at the most, 4 people. You can either team up with your friends prior to the event, or join one during WACHacks!</p>
-				</div>
-				<div class = "col s12 m4">
-					<p><b>Can I start my project before the event?</b></p>
-					<p>To make sure the competition is fair and everybody gets the same amount of time, please don't start your project until the intro presentations have concluded.</p>
+				<div class = "section row">
+					<h5 class = "orange-text center-align lighten-3">And more to come!</h5> 
+					<h5 class = "orange-text center-align lighten-3">If you are interested in sponsoring, please read our <a href = "/static/pdf/Sponsorship.pdf">prospectus</a> and contact us at <a href = "mailto:hello@wachacks.com">hello@wachacks.com</a>!</h5>
 				</div>
 			</div>
 		</div>
 	</div>
-
+	<div class = "section orange lighten-2">
+		<div class = "container">
+			<div class = "row">
+				<h1 class = "white-text center-align lighten-3">Organizers</h1>
+				<div class="row">
+					<div class="col m6 s12">
+						
+						<img src="/static/img/team/abhi.png" class="circle center-block responsive-img">
+						<br><br>
+						<p class = "white-text center-align">Abhinav Raghunathan</p>
+						<p class = "white-text center-align">Lead Organizer, Senior at WWP North</p>
+					</div>
+					<div class="col m6 s12">
+						
+						<img src="/static/img/team/tanishq.png" class="circle center-block responsive-img">
+						<br><br>
+						<p class = "white-text center-align">Tanishq Aggarwal</p>
+						<p class = "white-text center-align">Lead Organizer, Senior at WWP South</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class = "section white lighten-2">
+		<div class = "container">
+			<div class = "row">
+				<h1 class = "blue-text center-align lighten-3">Come Hack With Us!</h1>
+				<img src="/static/img/wachacks.png" class="center-block responsive-img">
+			</div>
+		</div>
+	</div>
+	<footer class="page-footer blue">
+		<div class="footer-copyright">
+			<div class="container">
+				<span class = "right">Made with &hearts; by the WACHacks team.</span>
+			</div>
+		</div>
+	</footer>
 	<script>
 
 		// function initialize() {
@@ -151,21 +181,21 @@
 		});
 
 		if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent))) {
-		    $(function() {
+			$(function() {
 				$(".title").typed({
-				strings: ["<large> <b>WAC</b></large> | Hacks^3000", " Totally <i>whack</i> hacks!^2000"],
-				contentType: 'html',
-				loop: true,
-				typeSpeed: 2,
-				showCursor: false
-			});
+					strings: ["<large> <b>WAC</b></large> | Hacks^3000", " Totally <i>whack</i> hacks!^2000"],
+					contentType: 'html',
+					loop: true,
+					typeSpeed: 2,
+					showCursor: false
+				});
 			});
 		}
 
 		$("#emailsubmit").click(function() {
 			function validateEmail(email) {
-			  var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-			  return re.test(email);
+				var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+				return re.test(email);
 			}
 
 			if (!(validateEmail($("#email").val()))) {
@@ -182,10 +212,10 @@
 						email: $("#email").val(),
 					},
 					success: function() {
-						$("#email").val(""),
-						Materialize.toast("Added you to our mailing list! Stay tuned for when registration opens.", 5000);
+						$("#email").val("");
 					}
 				});
+				window.open("https://abhinavr2121.typeform.com/to/sUdggO", "_blank");
 			}
 		});
 	</script>

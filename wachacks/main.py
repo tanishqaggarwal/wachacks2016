@@ -10,7 +10,7 @@ JINJA_ENVIRONMENT = jinja2.Environment(loader=jinja2.FileSystemLoader(os.path.di
 
 class Index(webapp2.RequestHandler):
   def get(self):
-    self.response.out.write(JINJA_ENVIRONMENT.get_template("index.html").render())
+    self.response.out.write(JINJA_ENVIRONMENT.get_template("index_old.html").render())
 
 class Register(webapp2.RequestHandler):
   def get(self):
