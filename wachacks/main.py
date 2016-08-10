@@ -12,13 +12,13 @@ class Index(webapp2.RequestHandler):
   def get(self):
     self.response.out.write(JINJA_ENVIRONMENT.get_template("index_old.html").render())
 
-class Register(webapp2.RequestHandler):
-  def get(self):
-    self.response.out.write(JINJA_ENVIRONMENT.get_template("register.html").render())
+# class Register(webapp2.RequestHandler):
+#   def get(self):
+#     self.response.out.write(JINJA_ENVIRONMENT.get_template("register.html").render())
 
-class Team(webapp2.RequestHandler):
-  def get(self):
-    self.response.out.write(JINJA_ENVIRONMENT.get_template("team.html").render())
+# class Team(webapp2.RequestHandler):
+#   def get(self):
+#     self.response.out.write(JINJA_ENVIRONMENT.get_template("team.html").render())
 
 def valid_email(emailstr):
   return re.match('^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$', emailstr) != None
@@ -40,6 +40,6 @@ class Subscription(ndb.Model):
 
 app = webapp2.WSGIApplication([
   ('/', Index),
-  ('/team', Team),
-  ('/register', Register),
+  # ('/team', Team),
+  # ('/register', Register),
   ('/subscribe', Subscribe)], debug = True)
