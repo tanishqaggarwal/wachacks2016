@@ -205,6 +205,7 @@
 			if (!(validateEmail($("#email").val()))) {
 				$("#email").removeClass("valid");
 				$("#email").addClass("invalid");
+				Materialize.toast("Please enter a valid email address!", 2000);
 			}
 			else {
 				$("#email").removeClass("invalid");
