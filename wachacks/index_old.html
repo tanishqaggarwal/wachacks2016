@@ -6,22 +6,7 @@
 	<!--Import materialize.css-->
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans|Quicksand|Comfortaa" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="/static/css/materialize.min.css">
-	<style type = "text/css">
-		body { 
-			font-family: Comfortaa;
-		}
-		.frontimage {
-			background: linear-gradient(
-      rgba(33, 150, 243, 0.75), 
-      rgba(33, 150, 243, 0.75)
-    ), url(/static/images/bg.jpg) no-repeat center fixed;
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
-		}
-		input::-webkit-input-placeholder {  color: #fff;}
-	</style>
+	<link rel="stylesheet" href="/static/css/style_old.css">
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
@@ -84,13 +69,13 @@
 					</div>
 					<div class = "col s12 m4">
 						<p><b>Can I start my project before the event?</b></p>
-						<p>To make sure the competition is fair and everybody gets the same amount of time, please don't start your project until the intro presentations have concluded.</p>
+						<p>To make sure the competitive part of the event is fair, please don't start your project until the intro presentations have concluded.</p>
 					</div>
 				</div>
 				<div class = "row">
 					<div class = "col s12 m4">
-						<p><b>Where is WACHacks going to be?</b></p>
-						<p>Windsor Athletic Club is located at <b>99 Clarksville Rd, West Windsor Township, NJ 08550.</b></p>	
+						<p><b>How can I get to WACHacks?</b></p>
+						<p>Windsor Athletic Club is located at <b>99 Clarksville Rd, West Windsor Township, NJ 08550.</b> We will be running a shuttle service to/from the nearby Princeton Junction train station from 7:00 AM - 9:00 AM.</p> <p>Since the event is a bit late into the night we don't advise planning on getting home via the train since it probably won't be running, so you should probably get picked up.</p>
 					</div>
 					<div class = "col s12 m4">
 						<p><b>Who can I contact with more questions?</b></p>
@@ -100,25 +85,59 @@
 			</div>
 		</div>
 	</div>
-	<div class = "section black lighten-2">
+	<div class = "section black">
 		<div class = "container">
 			<div class = "row">
-				<h1 class = "orange-text center-align lighten-3">Sponsors</h1>
-				<div class="section row">
-					<div class="col s12 m6 center">
-						<a href="http://fundbucket.org/about" target = "_blank"><img class = "responsive-img" src="static/img/sponsors/fundbucket.png"></a>
+				<h1 class = "orange-text center-align lighten-3">Schedule</h1>
+				<div class = "section row center-align">
+					<div class = "col s12 m6">
+						<table class = "orange-text">
+							<tbody>
+								<tr>
+									<td>7 - 9:00 AM</td><td>Check-in</td>
+								</tr>
+								<tr>
+									<td>8:30 AM</td><td>Opening Ceremonies</td>
+								</tr>
+								<tr>
+									<td>9:00 AM</td><td>Hacking begins!</td>
+								</tr>
+								<tr>
+									<td>9:00-9:30 AM</td><td>Team forming</td>
+								</tr>
+								<tr>
+									<td>10:00 AM - 12:00 PM</td><td>Various Workshops (TBA)</td>
+								</tr>
+								<tr>
+									<td>12:00 PM</td><td>Lunch</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
-					<div class="col s12 m6 center">
-						<a href="http://hopelinefashions.org" target = "_blank"><img class = "responsive-img" src="static/img/sponsors/hopeline.png"></a>
+					<div class = "col s12 m6">
+						<table class = "orange-text">
+							<tbody>
+								<tr>
+									<td>5:00 PM</td><td>Dinner</td>
+								</tr>
+								<tr>
+									<td>8:00 PM</td><td>Surprise snack...</td>
+								</tr>
+								<tr>
+									<td>9:00 PM</td><td>Hacking ends!</td>
+								</tr>
+								<tr>
+									<td>9:00-9:30 PM</td><td>Judging expo!</td>
+								</tr>
+								<tr>
+									<td>9:30-10:00 PM</td><td>Closing Ceremonies</td>
+								</tr>
+								<tr>
+									<td>10:00 PM</td><td>WACHacks ends!</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
-				</div>
-				<div class = "section row">
-					<h5 class = "orange-text center-align lighten-3">And more to come!</h5> 
-					<h5 class = "orange-text center-align lighten-3">If you're interested in sponsoring, please contact us at <a href = "mailto:hello@wachacks.com">sponsor@wachacks.com</a>!</h5>
-				</div>
-				<div class = "section row">
-					<h3 class = "orange-text center-align lighten-3">In partnership with</h3>
-					<a href="http://usawac.com" target = "_blank"><img class = "center-block responsive-img" src="static/img/sponsors/wac-logo.jpg"></a> 
 				</div>
 			</div>
 		</div>
@@ -126,30 +145,58 @@
 	<div class = "section orange">
 		<div class = "container">
 			<div class = "row">
-				<h1 class = "white-text center-align lighten-3">Organizers</h1>
+				<h1 class = "white-text center-align lighten-3">Sponsors</h1>
+				<div class="section row">
+					<div class="col s12 m4 offset-m4 center">
+						<a href="http://jetbrains.com" target = "_blank"><img class = "responsive-img" src="static/img/sponsors/logo_JetBrains_2.png"></a>
+					</div>
+				</div>
+				<div class="section row">
+					<div class="col s12 m2 offset-m4 center">
+						<a href="http://fundbucket.org/about" target = "_blank"><img class = "responsive-img" src="static/img/sponsors/fundbucket.png"></a>
+					</div>
+					<div class="col s12 m2 center">
+						<a href="http://hopelinefashions.org" target = "_blank"><img class = "responsive-img" src="static/img/sponsors/hopeline.png"></a>
+					</div>
+				</div>
+				<div class = "section row">
+					<h5 class = "white-text center-align lighten-3">And more to come!</h5> 
+					<h5 class = "white-text center-align lighten-3">If you're interested in sponsoring, please contact us at <a href = "mailto:hello@wachacks.com" class = "yellow-text">sponsor@wachacks.com</a>!</h5>
+				</div>
+				<div class = "section row">
+					<h3 class = "white-text center-align lighten-3">In partnership with</h3>
+					<a href="http://usawac.com" target = "_blank"><img class = "center-block responsive-img" src="static/img/sponsors/wac-logo.jpg"></a> 
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class = "section white">
+		<div class = "container">
+			<div class = "row">
+				<h1 class = "blue-text center-align lighten-3">Organizers</h1>
 				<div class="row">
 					<div class="col m6 s12">
 						
 						<img src="/static/img/team/abhi.png" class="circle center-block responsive-img">
 						<br><br>
-						<p class = "white-text center-align">Abhinav Raghunathan</p>
-						<p class = "white-text center-align">Lead Organizer, Senior at WWP North</p>
+						<p class = "blue-text center-align">Abhinav Raghunathan</p>
+						<p class = "blue-text center-align">Lead Organizer, Senior at WWP North</p>
 					</div>
 					<div class="col m6 s12">
 						
 						<img src="/static/img/team/tanishq.png" class="circle center-block responsive-img">
 						<br><br>
-						<p class = "white-text center-align">Tanishq Aggarwal</p>
-						<p class = "white-text center-align">Lead Organizer, Senior at WWP South</p>
+						<p class = "blue-text center-align">Tanishq Aggarwal</p>
+						<p class = "blue-text center-align">Lead Organizer, Senior at WWP South</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class = "section white lighten-2">
+	<div class = "section blue">
 		<div class = "container">
 			<div class = "row">
-				<h1 class = "blue-text center-align lighten-3">Come Hack With Us!</h1>
+				<h1 class = "white-text center-align lighten-3">Come Hack With Us!</h1>
 				<img src="/static/img/wachacks.png" class="center-block responsive-img">
 			</div>
 		</div>
@@ -157,6 +204,7 @@
 	<footer class="page-footer blue">
 		<div class="footer-copyright">
 			<div class="container">
+				<span class = "left">Questions? <a href = "mailto:hello@wachacks.com"><i class = "material-icons tiny white-text">email</i></a></span>
 				<span class = "right">Made with &hearts; by the WACHacks team.</span>
 			</div>
 		</div>

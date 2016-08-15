@@ -1,0 +1,14 @@
+html { 
+	font-family: Comfortaa;
+	background: linear-gradient(180deg, #FFFFFF 50%, #2196f3 50%);
+}
+.frontimage {
+	background: linear-gradient(
+		rgba(33, 150, 243, 0.75), 
+		rgba(33, 150, 243, 0.75)
+		), url(/static/img/bg.jpg) no-repeat center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
