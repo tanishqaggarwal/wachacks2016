@@ -6,7 +6,7 @@ html {
 	background: linear-gradient(
 		rgba(33, 150, 243, 0.75), 
 		rgba(33, 150, 243, 0.75)
-		), url(/static/img/bg.jpg) no-repeat center fixed;
+		), url(/static/img/wac.jpg) no-repeat center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
