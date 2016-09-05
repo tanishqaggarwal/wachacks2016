@@ -11,6 +11,7 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
 	<script type="text/javascript" src="/static/js/typed.js"></script>
+	<script type="text/javascript" src="/static/js/smoothscroll.js"></script>
 	<!-- 	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDlqWOCRUuOM_Ue95IT7S8hps4RZUiCEaI"></script> -->
 
 	<title>WAC | Hacks</title>
@@ -20,28 +21,42 @@
 </head>
 
 <body>
-	<div class = "row valign-wrapper frontimage" style = "height: 100vh;">
-		<div class = "col s12">
-			<div class = "row valign center-align">
-				<h1 class = "white-text" style="white-space:pre"> <span class = "title"><b>WAC</b> | Hacks</span></h1>
-				<p class = "white-text"><b>November 12th, 2016</b></p>
-				<p class = "white-text"><b>200</b> high school hackers, <b>12</b> hours</p>
-				<p class = "white-text"><b>Windsor Athletic Club</b></p>
-				<p class = "white-text">West Windsor, New Jersey</p>
-				<br />
+	<div class = "row frontimage" style = "height: 100vh;" id = "top">
+		<div class = "row valign-wrapper center-div">
+			<div class = "col s12">
 				<div class = "row valign center-align">
-					<div class = "col valign center-align m2 offset-m5 right-align">
-						<input id = "email" type = "text" placeholder = "want_to_hack@wac.hacks?" class = "validate center-align white-text"/>
-						<button id = "emailsubmit" class = "btn orange waves-light waves-effect center-align"><span class = "white-text">Yes!</span></button>
+					<h1 class = "white-text" style="white-space:pre"> <span class = "title"><b>WAC</b> | Hacks</span></h1>
+					<p class = "white-text"><b>November 12th, 2016</b></p>
+					<p class = "white-text"><b>200</b> high school hackers, <b>12</b> hours</p>
+					<p class = "white-text"><b>Windsor Athletic Club</b></p>
+					<p class = "white-text">West Windsor, New Jersey</p>
+					<br />
+					<div class = "row">
+						<div class = "col s10 offset-s1 m4 offset-m4">
+							<input id = "email" type = "text" placeholder = "want_to_hack@wac.hacks?" class = "validate center-align white-text"/>
+							<button id = "emailsubmit" class = "btn orange waves-light waves-effect center-align"><span class = "white-text">Yes!</span></button>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<div class = "row valign-wrapper bottom-div">
+			<div class = "col s12">
+				<p class = "center-align"><a data-scroll href="#about"><i class="material-icons large white-text">keyboard_arrow_down</i></a></p>
+			</div>
+		</div>
 	</div>
-	<div class = "section white">
+	<div class = "section white" id = "about">
 		<div class = "container">
 			<div class = "row">
-				<div class = "valign-wrapper"><h1 class = "center-block">What is WACHacks?</h1></div>
+				<div class = "col s12"><div class = "valign-wrapper"><h1 class = "center-block">What is WACHacks?</h1></div></div>
+			</div>
+			<div class = "row">
+				<div class = "col s12 m4 offset-m4">
+					<img class="responsive-img" src="/static/img/logo.png">
+				</div>
+			</div>
+			<div class = "row">
 				<p>WACHacks is the first exclusively high school hackathon in the West Windsor, New Jersey area. We're going to be bringing together 200 high schoolers and dozens of mentors from major companies to see what they can build in 12 hours! </p>
 				<div class = "row">
 					<div class = "col s12 m4">
@@ -142,33 +157,10 @@
 			</div>
 		</div>
 	</div>
-	<div class = "section orange">
-		<div class = "container">
-			<div class = "row">
-				<h1 class = "white-text center-align lighten-3">Organizers</h1>
-				<div class="row">
-					<div class="col m6 s12">
-						
-						<img src="/static/img/team/abhi.png" class="circle center-block responsive-img">
-						<br><br>
-						<p class = "white-text center-align">Abhinav Raghunathan</p>
-						<p class = "white-text center-align">Lead Organizer, Senior at WW-P High School North</p>
-					</div>
-					<div class="col m6 s12">
-						
-						<img src="/static/img/team/tanishq.png" class="circle center-block responsive-img">
-						<br><br>
-						<p class = "white-text center-align">Tanishq Aggarwal</p>
-						<p class = "white-text center-align">Lead Organizer, Senior at WW-P High School South</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 	<div class = "section white">
 		<div class = "container">
 			<div class = "row">
-				<h1 class = "blue-text center-align lighten-3">Sponsors</h1>
+				<h1 class = "orange-text center-align lighten-3">Sponsors</h1>
 				<div class="section row">
 					<div class="col s12 m3 center">
 						<a href="http://mitlaunch.com" target = "_blank"><img class = "responsive-img" src="static/img/sponsors/MITLaunch.png"></a>
@@ -192,7 +184,7 @@
 					</div>
 				</div>
 				<div class = "section row">
-					<h3 class = "blue-text center-align lighten-3">Community Partner</h3>
+					<h3 class = "orange-text center-align lighten-3">Community Partner</h3>
 					<div class = "row">
 						<div class = "col s12 m4 offset-m4 center">
 							<a href="http://sprint.hackerearth.com/?utm_source=Hackathon%20Partners&utm_medium=Banner&utm_content=US&utm_campaign=Wachack" target = "_blank"><img class = "responsive-img" src="static/img/sponsors/HE_logo.png"></a>
@@ -200,7 +192,7 @@
 					</div>
 				</div>
 				<div class = "section row">
-					<h3 class = "blue-text center-align lighten-3">In association with</h3>
+					<h3 class = "orange-text center-align lighten-3">In association with</h3>
 					<div class = "row">
 						<div class = "col s12 m4 offset-m4 center">
 							<a href="http://fundbucket.org/about" target = "_blank"><img class = "responsive-img" src="static/img/sponsors/fundbucket.png"></a>
@@ -213,7 +205,7 @@
 					</div>
 				</div>
 				<div class = "section row">
-					<h5 class = "blue-text center-align lighten-3">If you're interested in sponsoring, please contact us at <a href = "mailto:hello@wachacks.com" class = "blue-text darken-2"><u>sponsor@wachacks.com</u></a>!</h5>
+					<h5 class = "orange-text center-align lighten-3">If you're interested in sponsoring, please contact us at <a href = "mailto:hello@wachacks.com" class = "blue-text darken-2"><u>sponsor@wachacks.com</u></a>!</h5>
 				</div>
 			</div>
 		</div>
@@ -221,20 +213,66 @@
 	<div class = "section blue">
 		<div class = "container">
 			<div class = "row">
-				<h1 class = "white-text center-align lighten-3">Come Hack With Us!</h1>
-				<img src="/static/img/wachacks.png" class="center-block responsive-img">
+				<h1 class = "white-text center-align lighten-3">Organizers</h1>
+				<div class="row">
+					<div class="col m4 s12">
+
+						<img src="/static/img/team/abhi.png" class="circle center-block responsive-img">
+						<br><br>
+						<p class = "white-text center-align">Abhinav Raghunathan</p>
+						<p class = "white-text center-align">Lead Organizer, Co-Founder
+							<br />
+							Senior at WW-P High School North
+							<br />
+							<a href = "mailto:abhinav@wachacks.com" class = "white-text"><u>abhinav@wachacks.com</u></a>
+						</p>
+					</div>
+					<div class="col m4 s12">
+						<img src="/static/img/team/tanishq.png" class="circle center-block responsive-img">
+						<br><br>
+						<p class = "white-text center-align">Tanishq Aggarwal</p>
+						<p class = "white-text center-align">Lead Organizer, Co-Founder
+							<br />
+							Senior at WW-P High School South
+							<br />
+							<a href = "mailto:tanishq@wachacks.com" class = "white-text"><u>tanishq@wachacks.com</u></a></p>
+						</div>
+						<div class="col m4 s12">
+							<img src="/static/img/team/ilene.png" class="circle center-block responsive-img">
+							<br><br>
+							<p class = "white-text center-align">Ilene E</p>
+							<p class = "white-text center-align">Director of Marketing, Hacker Experience Lead
+								<br />
+								Senior at WW-P High School South
+								<br />
+								<a href = "mailto:ilene@wachacks.com" class = "white-text"><u>ilene@wachacks.com</u></a></p>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
-	</div>
-	<footer class="page-footer blue">
-		<div class="footer-copyright">
-			<div class="container">
-				<span class = "left">Questions? <a href = "mailto:hello@wachacks.com"><i class = "material-icons tiny white-text">email</i></a></span>
-				<span class = "right">Made with &hearts; by the WACHacks team.</span>
+			<div class = "section endimage">
+				<div class = "container">
+					<div class = "row">
+						<h1 class = "orange-text center-align lighten-3">Come hack with us!</h1>
+					</div>
+				</div>
 			</div>
-		</div>
-	</footer>
-	<script>
+			<footer class="page-footer grey">
+				<div class="footer-copyright">
+					<div class="container">
+						<span class = "left black-text"><a href = "mailto:hello@wachacks.com" class = "black-text"><u>Questions?</u></a> | 
+							<a data-scroll data-options='{"easing":"easeOutQuint"}' href = "#top" class = "black-text">Back to top</a></span>
+							<span class = "right black-text">Made with &hearts; by the WACHacks team.</span>
+						</div>
+					</div>
+				</footer>
+
+				<script>
+					smoothScroll.init();
+				</script>
+
+				<script>
 
 		// function initialize() {
 		//     var latlng = new google.maps.LatLng(40.297462, -74.656948);

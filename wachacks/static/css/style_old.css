@@ -1,6 +1,5 @@
 html { 
 	font-family: Exo;
-	background: linear-gradient(180deg, #FFFFFF 50%, #2196f3 50%);
 }
 .frontimage {
 	background: linear-gradient(
@@ -11,4 +10,27 @@ html {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+}
+.endimage {
+	height: 75vh;
+    background: url(/static/img/forest-banner.png);
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    position: relative; 
+}
+.center-div {
+	position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+}
+.bottom-div {
+	position: absolute;
+	width: 100%;
+	margin: 0 auto;
+	bottom: 0;
 }
