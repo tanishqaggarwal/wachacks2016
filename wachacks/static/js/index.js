@@ -1,5 +1,3 @@
-smoothScroll.init();
-
 $(document).ready(function () {
 			//initialize();
 			$('.modal-trigger').leanModal({
