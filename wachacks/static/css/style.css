@@ -1,182 +1,36 @@
-/**
- * Body CSS
- */
-
-html,
-body {
-  height: 100%;
-  font-family: Comfortaa;
-  background-color: rgb(89, 135, 233);
-  color: white;
+html { 
+	font-family: Exo;
 }
-
-html,
-body,
-input,
-textarea,
-buttons {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+.frontimage {
+	background: linear-gradient(
+		rgba(33, 150, 243, 0.75), 
+		rgba(33, 150, 243, 0.75)
+		), url(/static/img/wac.jpg) no-repeat center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
-
-
-/**
- * Header CSS
- */
-
-header {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 2;
+.endimage {
+	height: 75vh;
+    background: url(/static/img/forest-banner.png);
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    position: relative; 
 }
+.center-div {
+	position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 
-header ul.mui-list--inline {
-  margin-bottom: 0;
+    margin: auto;
 }
-
-header a {
-  color: white;
-  font-size: 25px;
-}
-
-header a:visited {
-  color: white;
-  text-decoration: none;
-}
-
-header a:hover {
-  color: white;
-}
-
-.mui--z1 {
-  box-shadow: none;
-}
-
-
-/**
- * Content CSS
- */
-
-#content-wrapper {
-  min-height: 100%;
-
-  /* sticky footer */
-  margin-bottom: -100px;
-  padding-bottom: 100px;
-}
-
-a {
-  font-family: Quicksand;
-}
-
-a:hover {
-  text-decoration: none;
-  color: white;
-}
-
-.mui-appbar {
-  background-color: rgb(89, 135, 233)
-}
-
-/**
- * Footer CSS
- */
-
-footer {
-  height: 100px;
-  background-color: #eee;
-  border-top: 1px solid #e0e0e0;
-  padding-top: 35px;
-}
-
-.brand {
-  height: 40%;
-}
-
-.hover {
-  background-color: transparent;
-  padding: 10px;
-  height: 100%;
-}
-
-.hover a:hover {
-  text-decoration: none;
-}
-
-.hover:hover {
-  border-radius: 5%;
-  background-color: rgb(232, 146, 17);
-}
-
-#content-wrapper {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/stars2.jpeg);
-  background-size: 100% 100%;
-  background-position: right;
-}
-
-.mui-container-half {
-  height: 50%;
-  width: 100%;
-}
-
-.mui-container {
-  height: 100%;
-  width: 100%;
-}
-
-#intro {
-  margin-top: 10%;
-  font-family: Quicksand;
-}
-
-#intro .mui--text-display3 {
-  font-size: 80px;
-}
-
-.big {
-  font-size: 60px;
-  font-family: Quicksand;
-}
-
-.small {
-  font-size: 20px;
-}
-
-.body {
-  font-size: 20px;
-  color: orange;
-  font-weight: bold;
-}
-
-#intro .head-text {
-  font-size: 30px;
-  font-family: Quicksand;
-}
-
-.about {
-  margin-top: 5%;
-  font-family: Quicksand;
-}
-
-#sponsor img {
-  width: 100%;
-  height: 100%;
-}
-
-.team {
-  border-radius: 10%;
-  width: 40%;
-}
-
-footer {
-  background-color: transparent;
-}
-
-.fancy {
-  margin-top: 5%;
-  font-size: 60px;
-  font-family: Comfortaa;
+.bottom-div {
+	position: absolute;
+	width: 100%;
+	margin: 0 auto;
+	bottom: 0;
 }
