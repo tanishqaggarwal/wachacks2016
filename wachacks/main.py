@@ -30,8 +30,20 @@ class Subscription(ndb.Model):
   email         = ndb.StringProperty(required = True)
   ip            = ndb.StringProperty(required = True)
 
+class DumpSubscription(webapp2.RequestHandler):
+	def post(self):
+		password = self.request.get("password")
+		if password == "wachacks2016-dumpme:(":
+			subscriptions = Subscription.query().fetch()
+			for subscription in subscriptions:
+				self.response.out.write(subscription.email + ", ")
+		else:
+			self.response.out.write("invalid password")
+
+
 app = webapp2.WSGIApplication([
   ('/', Index),
   # ('/team', Team),
   # ('/register', Register),
-  ('/subscribe', Subscribe)], debug = True)
+  ('/subscribe', Subscribe),
+  ('/dump_subscription', DumpSubscription)], debug = True)
